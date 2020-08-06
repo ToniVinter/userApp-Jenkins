@@ -1,9 +1,5 @@
 package com.antoniovinter.implementation.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import org.springframework.data.elasticsearch.annotations.Document;
-
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
