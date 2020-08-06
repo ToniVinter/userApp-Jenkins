@@ -98,7 +98,7 @@ public class UserServiceTest {
         User expected = new User("Ana","adfd", null, null);
         UserDto userDto = new UserDto(expected.getName(),expected.getPassword());
         when(userRepository.save(any(User.class))).thenReturn(expected);
-        when(userConverter.UserToDto(expected));
+        when(userConverter.UserToDto(expected)).thenReturn(userDto);
 
 
         UserDto actual = userService.addUser(userDto);
